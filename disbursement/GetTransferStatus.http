@@ -1,0 +1,6 @@
+GET {{base_url}}/disbursement/v1_0/transfer/sd HTTP/1.1
+Authorization: Bearer {{disburment_beaer_token}}
+X-Target-Environment: {{environment}}
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{disburment_sub_key}}
+
