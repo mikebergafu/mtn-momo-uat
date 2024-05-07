@@ -1,0 +1,12 @@
+POST {{base_url}}/collection/v1_0/requesttopay/dfg/deliverynotification HTTP/1.1
+notificationMessage: Hello message
+Language: en
+Authorization: Bearer {{collection_beaer_token}}
+X-Target-Environment: {{environment}}
+Content-Type: application/json
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+
+{
+    "notificationMessage": "string"
+}

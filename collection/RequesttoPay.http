@@ -1,0 +1,19 @@
+POST {{base_url}}/collection/v1_0/requesttopay HTTP/1.1
+Authorization: Bearer {{collection_beaer_token}}
+X-Callback-Url: {{callback_url}}
+X-Reference-Id: {{reference_id}}
+Content-Type: application/json
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+
+{
+    "amount": "string",
+    "currency": "string",
+    "externalId": "string",
+    "payer": {
+        "partyIdType": "MSISDN",
+        "partyId": "string"
+    },
+    "payerMessage": "string",
+    "payeeNote": "string"
+}

@@ -1,0 +1,6 @@
+GET {{base_url}}/collection/v2_0/payment/fg HTTP/1.1
+Authorization: Bearer {{collection_beaer_token}}
+X-Target-Environment: {{environment}}
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+

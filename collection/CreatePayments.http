@@ -1,0 +1,18 @@
+POST {{base_url}}/collection/v2_0/payment HTTP/1.1
+Authorization: Bearer {{collection_beaer_token}}
+X-Callback-Url: {{callback_url}}
+X-Reference-Id: {{reference_id}}
+X-Target-Environment: {{environment}}
+Content-Type: application/json
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+
+{
+    "externalTransactionId": "string (An external transaction id to tie to the payment.)",
+    "money": {
+        "amount": "string",
+        "currency": "string"
+    },
+    "customerReference": "String(661551442)",
+    "serviceProviderUserName": "String"
+}
