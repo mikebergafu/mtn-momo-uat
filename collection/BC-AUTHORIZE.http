@@ -1,0 +1,10 @@
+###This operation is used to claim a consent by the account holder for the requested scopes.
+POST https://sandbox.momodeveloper.mtn.com/collection/v1_0/bc-authorize HTTP/1.1
+Authorization: Bearer {{collection_beaer_token}}
+X-Target-Environment: {{environment}}
+X-Callback-Url: {{callback_url}}
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+
+login_hint=ID:{msisdn}/MSISDN&scope={scope}&access_type={online/offline}

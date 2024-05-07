@@ -1,0 +1,5 @@
+POST https://sandbox.momodeveloper.mtn.com/collection/token/ HTTP/1.1
+Authorization: Basic {{collection_basic_token}}
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+

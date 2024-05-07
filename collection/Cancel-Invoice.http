@@ -1,0 +1,12 @@
+DELETE https://sandbox.momodeveloper.mtn.com/collection/v2_0/invoice/ddd HTTP/1.1
+Authorization: Bearer {{collection_beaer_token}}
+X-Target-Environment: {{environment}}
+X-Reference-Id: {{$uuid}}
+X-Callback-Url: {{callback_url}}
+Content-Type: application/json
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{collection_sub_key}}
+
+{
+    "externalId": "string"
+}

@@ -1,0 +1,21 @@
+### API USER
+POST https://sandbox.momodeveloper.mtn.com/v1_0/apiuser HTTP/1.1
+X-Reference-Id: {{$uuid}}
+Content-Type: application/json
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{disburment_sub_key}}
+
+{
+    "providerCallbackHost": "string"
+}
+### Get API User Info
+GET https://sandbox.momodeveloper.mtn.com/v1_0/apiuser/{{disburment_api_user}} HTTP/1.1
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{disburment_sub_key}}
+
+### Used to create an API key for an API user in the sandbox target environment.
+POST https://sandbox.momodeveloper.mtn.com/v1_0/apiuser/{{reference_id}}/apikey HTTP/1.1
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{disburment_sub_key}}
+
+

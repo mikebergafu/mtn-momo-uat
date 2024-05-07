@@ -1,0 +1,5 @@
+POST https://sandbox.momodeveloper.mtn.com/disbursement/token/ HTTP/1.1
+Authorization: Basic {{disburment_basic_token}}
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{disburment_sub_key}}
+
