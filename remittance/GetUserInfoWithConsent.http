@@ -1,0 +1,6 @@
+GET {{base_url}}/remittance/oauth2/v1_0/userinfo HTTP/1.1
+Authorization: Bearer {{remittance_beaer_token}}
+X-Target-Environment: {{environment}}
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{remittance_sub_key}}
+

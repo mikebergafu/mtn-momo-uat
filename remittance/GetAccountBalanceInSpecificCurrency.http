@@ -1,0 +1,6 @@
+GET {{base_url}}/remittance/v1_0/account/balance/d HTTP/1.1
+Authorization: Bearer {{remittance_beaer_token}}
+X-Target-Environment: {{environment}}
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{remittance_sub_key}}
+

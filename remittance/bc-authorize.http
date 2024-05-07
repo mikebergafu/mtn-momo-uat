@@ -1,0 +1,9 @@
+POST {{base_url}}/remittance/v1_0/bc-authorize HTTP/1.1
+Authorization: Bearer {{remittance_beaer_token}}
+X-Target-Environment: {{environment}}
+X-Callback-Url: {{callback_url}}
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{remittance_sub_key}}
+
+login_hint=ID:{msisdn}/MSISDN&scope={scope}&access_type={online/offline}

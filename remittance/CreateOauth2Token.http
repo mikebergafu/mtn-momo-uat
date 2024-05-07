@@ -1,0 +1,8 @@
+POST {{base_url}}/remittance/oauth2/token/ HTTP/1.1
+Authorization: Basic {{remittance_basic_token}}
+X-Target-Environment: {{environment}}
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Ocp-Apim-Subscription-Key: {{remittance_sub_key}}
+
+grant_type=urn:openid:params:grant-type:ciba&auth_req_id={auth_req_id}
